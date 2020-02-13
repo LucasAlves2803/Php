@@ -1,0 +1,144 @@
+*{margin:0;
+  padding:0; 
+  font-family:arial;
+  font-size:14px;
+}
+
+body{
+	background-color:#DDD;
+}
+
+/* Conteúdo */
+#principal{ 
+	max-width:800px; /* Largura da página */
+	min-height:600px; /* Largura da página */
+	margin: 0 auto;
+	background-color: #FF0000;
+	border: 1px solid red;
+}
+
+
+#topo{
+	width:800px;
+	height:460px;
+	background-color: #000000;
+	float:left;
+	position: relative;
+}
+#topo figure{  /* altera a margem da figura que está no arquivo topo */ 
+	margin:200px 37% auto; /* desce a imagem em n px e ajusta x % a direita */
+	z-index:10;
+	position:relative;
+}
+
+#topo figure img{  /* Faz alterações na figura */
+		width:200px;
+		height: auto;
+		background-color:#000;
+		border-radius:50px;
+}
+
+#topo header{
+	width: 100%;
+	position: absolute;
+	margin-top: 120px; 
+}
+
+#topo header h1{
+	font-size:36px;
+	color:#FFF
+}
+/* Primeira lista */
+#foto{  /* Elimina o estilo da primeira lista da foto */
+	list-style:none;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#foto li:hover ul{display:block}
+/* Segunda lista */
+#foto li ul{  /* Elimina o estilo da lista /// Menu de opções para adicionar ou retirar fotos */
+	display:none;
+	list-style:none;
+	position: absolute;
+	background-color:#FFF;
+	width:170px;
+	left: 20px;
+	top:30px;
+	border: 1px solid black;
+	z-index:10;
+}
+
+#foto li ul li {	
+	color: #111;
+	padding:5px 20px;
+	margin:1px 1px;
+	background-color:#FFF;
+}#foto li ul li:hover{color:#FFF;background-color:#777;}
+
+/* container que possuia a foto da camera */
+#topo nav{ /* Cria uma borda para os elementos que estão na tag nav do arquivo topo */
+	position: absolute;
+	width: 120px;
+	height:120px;
+	top:448px;
+	left:437px;
+}
+
+#cam{
+	border-radius:100px;
+	width:50px;
+	height:50px;
+	transition:0.1s;
+	position:relative;
+	z-index:10;
+}
+#foto li:hover #cam{width:55px; height:auto;}
+/* link */
+#itens_menu li a{
+	text-decoration:none;
+	color:#0AF;
+	padding: 5px 15px;
+}
+#menu_perfil{ /* Barra onde está os palavras atividade e sobre */
+	width:100%; 
+	min-height:50px; 
+	background-color:#222;
+	position: absolute;
+	bottom:0;	
+}
+#menu_perfil a{ /* Atividade e Sobre (Links) */
+	float: left;
+	text-decoration:none;
+	color:#EEEEEE;
+	padding: 30px; /* Altera a margem do texto (Atividade e sobre) */
+    background-color:#222222;	
+}#menu_perfil a:hover{
+	background-color:#555;
+	color:#CFC;
+}
+#conteudo{
+	width:100%;
+	height:100px;
+	background-color:#FF0000;
+	float:left;
+}
+#rodape{
+	width:100%;
+	height:40px;
+	float:left;
+	background-color:#FFF;
+}
+footer p{
+		text-align: center;
+		margin:20px 0;
+		color: #444;
+}
+/*
+#foto li img{
+	width:120px;
+	height: auto;
+	background-color:#000;
+	border-radius:120px;
+}*/
